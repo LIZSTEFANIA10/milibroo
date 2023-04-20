@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title></title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<form action="https://www.utpl.edu.ec/" method="get" target="_blank">
+
+  <fieldset>
+               <h1> Formulario de Registro </h1>
+         <p>Nombres y Apellidos: <input type="text" name="nombre" size="40"></p>
+
+         <label for="email">Ingrese su email:</label>
+
+       <input type=" email" id="email"
+       pattern=".+@globex\.com" size="30" required>
+
+       <form name="formulario" method="post" action="/send.php">
+  <input type="date" name="fecha" min="2021-01-01" max="2021-12-31" step="2" />
+
+  <input type="time" name="hora" min="00:00" max="23:59" step="3600" />
+</form>
+
+<label for="tentacles">Edad:</label>
+
+<input type="number" id="tentacles" name="tentacles"
+       min="18" max="65">
+
+   <p><label>Número telefónico: <input type="tel" name="telefono"></label></p>
+   <p><label>Color favorito: <input type="color" name="colorfavorito"></label></p>
+
+  </fieldset>
+  
+  <p>
+
+    <input type="submit" value="Enviar datos">
+
+    <input type="reset" value="Restaurar formulario">
+
+  </p>
+  
+</body>
+</html>
